@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <div class="container">
+       <div class="header">
+       <img class="logo" src="img/docesabor.jpg">
+           </div>
+        <div class="mainnav">
+            <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="kitfesta.html">Kit Festa</a></li>
+        <li><a href="faleconosco.html">Fale Conosco</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="restrito.html">Acesso Restrito</a></li>
+    </ul>
+    </div>
+    <div class="menul">
+        </div>
+     <div class="contents">
+     <form name="faleconosco" onsubmit="msg();">
+     <fieldset class="grupo">
+       <legend>Fale Conosco</legend>
+
+       <label>Infome o seu nome:</label>
+       <input type="text" class="maior" name="nome" id="nome" required maxlength="50"
+       placeholder="Digite o seu nome..."
+       onblur="aumento();">
+       <br><br>
+
+       <label>Informe o seu e-mail:</label>
+       <input type="email" class="maior" name="email" id="email" required
+       placeholder="Digite o seu e-mail...">
+       <br><br>
+
+       <label>Informe o seu Whatsapp:</label>
+       <input type="text" class="menor" name="whatsapp" id="whatsapp" required placeholder="(99) 99999-9999">
+       <br><br>
+
+       <label>Informe o assunto:</label>
+       <select name="assunto" id="assunto">
+       <option value="0">Selecione o assunto</option>
+       <option value="1">Elogio</option>
+       <option value="2">Reclamação</option>
+       <option value="3">Sugestão</option>
+       <option value="4">Dúvidas</option>
+       </select>
+       <br><br>
+
+       <label>Deixe o seu recado:</label>
+       <br>
+       <textarea name="recado" class="maior" id="recado" rows="7" required maxlength="100" placeholder="Digite o seu recado..."></textarea>
+       </textarea>
+       <br><br>
+       <input type="submit" name="ENVIAR" id="ENVIAR" value="ENVIAR">
+       <input type="reset" name="LIMPAR" id="LIMPAR" value="LIMPAR">
+     </fieldset>
+
+    </div>
+    <div class="footer">
+      Construído em 15 de Dezembro de 2021, por Thalita.
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" language="javascript" 
+src="js/funcao.js">
+</script>
